@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #252525;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Crimson Text", serif;
+}
+
+h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.artist {
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+p {
+  margin: 0;
+  padding-left: 10px;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  padding: 0 10px;
+}
+a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  font-family: "Crimson Text", serif;
+}
+
+select option[value=""][disabled] {
+  display: none;
+}
+
+option {
+  padding: 10px;
+  font-size: 14px;
+  background-color: white;
+  font-family: "Crimson Text", serif;
+}

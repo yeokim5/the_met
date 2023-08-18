@@ -1,0 +1,187 @@
+.screen-container {
+  background-color: rgb(219, 206, 206);
+  box-shadow: 0 0 10px 2px 3333331a;
+  border-radius: 3px;
+  width: 400px;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+#search-text {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  font-family: "Crimson Text", serif;
+  width: 270px;
+  margin-left: 30px;
+  justify-content: center;
+}
+
+#search-text::-webkit-input-placeholder {
+  color: rgb(94, 68, 68);
+}
+#search-btn {
+  background-color: transparent;
+  border: none;
+  color: goldenrod;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#random-gallery {
+  position: relative;
+  width: 380px;
+  margin: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 10px 10px rgb(173, 173, 173);
+  border-radius: 5px;
+}
+
+#random-img {
+  position: absolute;
+  z-index: 1;
+  max-width: 330px;
+  max-height: 248px;
+  border-radius: 3px;
+}
+
+.random-dis {
+  background-color: rgb(193, 203, 212);
+  box-shadow: 0 0 10px 10px rgb(202, 200, 200);
+  border: 1px solid rgba(73, 73, 73, 0.2);
+  bottom: 0;
+  left: 0;
+  display: flex;
+  margin: 0 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.liked-art {
+  padding: 0.1rem;
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid white;
+  margin: 0 10px;
+}
+
+.liked-art-container {
+  position: relative;
+  display: flex;
+  overflow-x: auto;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+  scrollbar-width: thin;
+  scrollbar-color: #888888 #f0f0f0;
+}
+
+.liked-art-container::-webkit-scrollbar {
+  height: 12px;
+}
+
+.liked-art-container::-webkit-scrollbar-thumb {
+  background-color: #888888;
+  border-radius: 4px;
+}
+
+.liked-art-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555555;
+}
+
+.liked-art-container::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Color of the scrollbar track */
+  border-radius: 4px;
+}
+
+.liked-art img {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 2px #3333331a;
+  object-fit: cover;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  position: relative;
+}
+
+.liked-art p {
+  display: inline-block;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 75px;
+}
+
+.liked-text {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  margin-left: 10px;
+}
+
+.random-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.love-btn {
+  position: absolute;
+
+  border: none;
+  background-color: transparent;
+  color: rgb(197, 188, 188);
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 4;
+  bottom: 40px;
+  right: 35px;
+}
+
+.love-btn.active {
+  color: rgb(236, 74, 74);
+}
+
+#country {
+  width: 300px;
+}
+
+#start_year,
+#end_year {
+  width: 140px;
+}
+
+.select-container {
+  display: flex;
+  column-gap: 20px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}

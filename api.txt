@@ -1,0 +1,8 @@
+GET /public/collection/v1/objects returns a listing of all valid Object IDs available to use
+
+GET /public/collection/v1/objects/[objectID]
+
+GET /public/collection/v1/departments
+
+GET /public/collection/v1/search
+
