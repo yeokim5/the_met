@@ -233,8 +233,20 @@ header {
   background-color: #ff6347;
   border: none;
   color: white;
-  padding: 5px 10px;
-  border-radius: 3px;
+  padding: 10px 20px;
+  border-radius: 10px;
   cursor: pointer;
   margin-top: 10px;
+  font-family: inherit;
+}
+
+.liked-art-container h4 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  margin-left: 120px; /* Remove any default margin */
 }

@@ -168,9 +168,13 @@ function remvoeArtLS(art) {
 // load like art
 function load_like_art() {
   const liked_art_container = document.querySelector(".liked-art-container");
-  const art_array = JSON.parse(localStorage.getItem("artIds"));
+  const art_array = JSON.parse(localStorage.getItem("artIds")) || [];
   liked_art_container.innerHTML = "";
 
+  if (art_array.length === 0) {
+    liked_art_container.innerHTML = "<h4>No Liked Art Found</h4>";
+    return;
+  }
   art_array.forEach((element, index) => {
     const artItem = document.createElement("li");
     artItem.innerHTML = `
