@@ -17,67 +17,13 @@
     <h1></h1>
     <div class="screen-container">
       <h1 class="title">The Met Random Art Recommendation</h1>
-      <!-- <header>
-        <input type="text" id="search-text" placeholder="Search Here" />
-        <button id="search-btn"><i class="fas fa-search"></i></button>
+      <header>
       </header>
 
       <div class="liked-art">
         <h2 class="liked-text">Liked Art</h6>
-        <ul class="liked-art-container">
-          <li class="liked-art-element">
-            <img
-            src="https://images.metmuseum.org/CRDImages/as/web-large/DP251139.jpg"
-            alt=""
-          />
-          <br>
-          <p>Quail and Millet</p>
-          </li>
-          <li>
-            <img
-          src="https://images.metmuseum.org/CRDImages/ep/web-large/DT1567.jpg"
-          alt=""
-        />
-        <br>
-        <p>Wheat Field with Cypresses</p>
-          </li>
-          <li class="liked-art-element">
-            <img
-            src="https://images.metmuseum.org/CRDImages/as/web-large/DP251139.jpg"
-            alt=""
-          />
-          <br>
-          <p>Quail and Millet</p>
-          </li>
-          <li>
-            <img
-          src="https://images.metmuseum.org/CRDImages/ep/web-large/DT1567.jpg"
-          alt=""
-        />
-        <br>
-        <p>Wheat Field with Cypresses</p>
-          </li>
-          <li class="liked-art-element">
-            <img
-            src="https://images.metmuseum.org/CRDImages/as/web-large/DP251139.jpg"
-            alt=""
-          />
-          <br>
-          <p>Quail and Millet</p>
-          </li>
-          <li>
-            <img
-          src="https://images.metmuseum.org/CRDImages/ep/web-large/DT1567.jpg"
-          alt=""
-        />
-        <br>
-        <p>Wheat Field with Cypresses</p>
-          </li>
-        </ul>
-        
-        
-      </div> -->
-
+        <ul class="liked-art-container"></ul>
+      </div>
       <div class="gallery-container">
         <img src="gallery.png" alt="gallery" id="random-gallery" />
         <img
@@ -85,9 +31,9 @@
           alt="image copyrighted,click 'google image' to view"
           id="random-img"
         />
-        <!-- <button class="love-btn active">
+        <button class="love-btn">
           <i class="fas fa-heart"></i>
-        </button> -->
+        </button>
       </div>
 
       <div class="random-choice">
@@ -106,6 +52,15 @@
           <i class="fa-solid fa-dice"></i>
         </button>
       </div>
+      <div id="artModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img id="modal-image" src="" alt="" />
+          <p id="modal-title"></p>
+        </div>
+      </div>
+
+      
     </div>
   </body>
 </html>
